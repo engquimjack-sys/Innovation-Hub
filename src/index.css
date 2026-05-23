@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+/* ======= LIGHT THEME VARIABLES AND CSS OVERRIDES ======= */
+.theme-light {
+  color-scheme: light;
+  background-color: #f8fafc !important; /* slate-50 background */
+  color: #0f172a !important; /* slate-900 text */
+}
+
+/* Overriding Dark Panel background styles */
+.theme-light .bg-slate-950,
+.theme-light .bg-slate-950\/60,
+.theme-light .bg-slate-950\/40 {
+  background-color: #f1f5f9 !important; /* slate-100 panels */
+}
+
+.theme-light .bg-slate-900,
+.theme-light .bg-slate-950\/20,
+.theme-light .bg-slate-900\/40,
+.theme-light .bg-slate-900\/50,
+.theme-light .bg-slate-900\/60 {
+  background-color: #ffffff !important; /* white cards */
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05), 0 1px 2px 0 rgba(0, 0, 0, 0.03);
+}
+
+.theme-light .bg-black\/60 {
+  background-color: rgba(15, 23, 42, 0.6) !important; /* maintain backdrop contrast */
+}
+
+/* Border controls */
+.theme-light .border-slate-800,
+.theme-light .border-slate-900,
+.theme-light .border-slate-800\/40,
+.theme-light .border-slate-800\/60 {
+  border-color: #e2e8f0 !important; /* slate-200 dividers */
+}
+
+/* Text overrides */
+.theme-light .text-slate-100,
+.theme-light .text-slate-200 {
+  color: #0f172a !important; /* slate-900 */
+}
+
+.theme-light .text-slate-300,
+.theme-light .text-slate-400 {
+  color: #334155 !important; /* slate-700 */
+}
+
+.theme-light .text-slate-500 {
+  color: #475569 !important; /* slate-600 */
+}
+
+.theme-light .text-slate-600 {
+  color: #64748b !important; /* slate-500 */
+}
+
+/* Inputs, Textareas, and Dropdown selects */
+.theme-light input,
+.theme-light select,
+.theme-light textarea {
+  background-color: #ffffff !important;
+  color: #0f172a !important;
+  border-color: #cbd5e1 !important;
+  box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.02);
+}
+
+.theme-light select option {
+  background-color: #ffffff !important;
+  color: #0f172a !important;
+}
+
+/* Hover background states */
+.theme-light .hover\:bg-slate-900:hover,
+.theme-light .hover\:bg-slate-900\/40:hover,
+.theme-light .hover\:bg-slate-800\/40:hover {
+  background-color: #f1f5f9 !important; /* slate-100 hover */
+}
+
+/* Sidebar Specific Polish when in Light mode */
+.theme-light .bg-slate-900 .font-bold {
+  color: #06b6d4 !important; /* text-cyan-500 highlighted labels */
+}
+
+/* Form placeholding colors */
+.theme-light .placeholder-slate-600::placeholder {
+  color: #94a3b8 !important; /* slate-400 placeholders */
+}
